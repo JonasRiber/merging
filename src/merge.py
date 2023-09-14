@@ -25,10 +25,13 @@ def merge(x: list[int], y: list[int]) -> list[int]:
         #break  # FIXME: you shouldn't just break here
     # At least one of the lists is empty now. Copy the
     # remainder of the other into z.
-    if j == len(y):
-        z.extend(x[i:])
-    else:
-        z.extend(y[j:])
+    while i < len(x):
+        z.append(x[i])
+        i += 1
+    while j < len(y):
+        z.apped(y[j])
+        j += 1
+    
     return z
 
 ########################
