@@ -29,7 +29,7 @@ def merge(x: list[int], y: list[int]) -> list[int]:
         z.append(x[i])
         i += 1
     while j < len(y):
-        z.apped(y[j])
+        z.append(y[j])
         j += 1
     
     return z
